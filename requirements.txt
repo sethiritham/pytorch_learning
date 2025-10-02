@@ -1,0 +1,30 @@
+# Core PyTorch Deep Learning Libraries
+torch
+torchvision
+
+# For creating model summaries (e.g., summary(model_0, ...))
+torchinfo
+
+# For creating DataFrames from results (e.g., pd.DataFrame(model_0_results))
+pandas
+
+# For plotting graphs and images (e.g., plt.imshow(), plt.plot())
+matplotlib
+
+# Often used for ML utilities, good to have in the environment
+scikit-learn
+
+# For experiment logging and visualization
+tensorboard
+
+# For progress bars in your training loop
+tqdm
+
+# For handling images (e.g., Image.open())
+Pillow
+
+# For downloading files from the web (used by kagglehub)
+requests
+
+# For downloading the dataset from Kaggle Hub
+kagglehub
