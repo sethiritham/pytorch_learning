@@ -1,0 +1,10 @@
+# Data and log files
+data/
+runs/
+models/
+
+# Python cache & environment
+__pycache__/
+*.pyc
+venv/
+.env
