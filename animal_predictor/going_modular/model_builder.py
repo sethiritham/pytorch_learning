@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-
+import torchvision
 class TinyVGG(nn.Module):
     def __init__(self, input_shape : int, output_shape : int, hidden_units : int):
         super().__init__()
@@ -24,3 +24,4 @@ class TinyVGG(nn.Module):
         )
     def forward(self, x : torch.Tensor):
         return self.classifier(self.conv_block_2(self.conv_block_1(x)))
+    

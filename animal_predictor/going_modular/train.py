@@ -17,8 +17,8 @@ if __name__ == '__main__':
     HIDDEN_UNITS = 10
     LEARNING_RATE = 0.001
     NUM_WORKERS = os.cpu_count()
-    train_dir = r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\going_modular\data\animals\train"
-    test_dir = r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\going_modular\data\animals\test"
+    train_dir = r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\animal_predictor\data\animals\train"
+    test_dir = r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\animal_predictor\data\animals\test"
 
     device = ("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -37,4 +37,4 @@ if __name__ == '__main__':
     writer.close()
     engine.train(model = tiny_vgg_model, train_dataloader = train_dataloader, test_dataloader = test_dataloader, optimizer = optimizer, loss_fn = loss_fn, epochs = NUM_EPOCHS)
 
-    utils.save_model(model = tiny_vgg_model, target_dir = r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\going_modular\models", model_name = "tiny_vgg_model.pth")
+    utils.save_model(model = tiny_vgg_model, target_dir = r"C:\Users\Rizzam\Documents\CODES\Python\deep_learning\pytorch\animal_predictor\models", model_name = "tiny_vgg_model.pth")
